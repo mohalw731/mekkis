@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import HomeAboutus from "../components/HomeAboutus";
 import Navbar from "../components/Navbar";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <HomeAboutus/>
     </>
   );
 }

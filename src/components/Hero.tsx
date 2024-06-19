@@ -1,5 +1,11 @@
 function Hero() {
-  return <h1 className="hero-heading">Förvandla din data till <br /> värdefulla insikter</h1>
+  return (
+    <div className="hero">
+      <h1 className="hero-heading">
+        Förvandla din data till <br /> värdefulla insikter
+      </h1>
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;

@@ -14,6 +14,22 @@ h2 {
   font-family: "Sen", sans-serif;
 }
 
+button {
+  width: 110px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(.95);
+  transition: all 200ms ease;
+}
+
 .row {
   max-width: 1000px;
   margin: 0 auto;
@@ -70,7 +86,73 @@ nav ul li:hover {
   letter-spacing: 1.5px;
   word-spacing: 2px;
   font-size: 80px;
-  padding: 150px 0;
+}
+
+.hero {
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* Hero End */
 
+/* Hero-about-us start*/
+.about-us__hero {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  margin: 250px 0;
+}
+
+.aboutus-gradient {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.graphs {
+  margin: 20px 0;
+}
+
+.column-layout{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-us__gardient-2 {
+  position: absolute;
+  bottom: -400px;
+  right: -100px;
+  width: 100%;
+}
+/* Hero-about-us end*/
+
+/* subtext start */
+.subtext{
+  position: relative;
+  z-index: 10;
+  color: white;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  display: flex;
+  gap: 15px;
+}
+
+.subtext-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon {
+  width: 110px;
+  height: 60px;
+}
+/* subtext end */
