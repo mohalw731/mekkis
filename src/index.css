@@ -132,7 +132,7 @@ nav ul li:hover {
 }
 
 .hero {
-  height: 85dvh;
+  height: 70dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,7 +413,7 @@ html, body {
   flex-direction: column;
   gap: 15px;
   position: relative;
-  margin: 150px 0;
+  /* margin: 150px 0; */
 }
 
 .menu-list ul li{
