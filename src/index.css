@@ -7,6 +7,7 @@
 
 body {
   background-color: #242424;
+  position: relative;
 }
 
 h1,
@@ -37,6 +38,11 @@ button:hover {
 }
 
 /* Navbar start*/
+
+.menu {
+ visibility: hidden;
+}
+
 nav {
   background-color: #202020;
   position: relative;
@@ -69,7 +75,7 @@ nav ul li:hover {
   width: 1200px;
   height: 1000px;
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -89,22 +95,23 @@ nav ul li:hover {
 }
 
 .hero {
-  height: 90dvh;
+  height: 75dvh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /* Hero End */
 
 /* Hero-about-us start*/
 .about-us__hero {
-  height: 100dvh;
+  /* height: 100dvh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
   position: relative;
-  margin: 250px 0;
+  margin: 100px 0;
 }
 
 .aboutus-gradient {
@@ -112,14 +119,14 @@ nav ul li:hover {
   width: 100%;
   top: 30%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .graphs {
   margin: 20px 0;
 }
 
-.column-layout{
+.column-layout {
   padding: 100px 0;
   display: flex;
   flex-direction: column;
@@ -128,14 +135,15 @@ nav ul li:hover {
 
 .about-us__gardient-2 {
   position: absolute;
-  bottom: -400px;
-  right: -100px;
+  bottom: -100px;
+  right: -150px;
   width: 100%;
 }
+
 /* Hero-about-us end*/
 
 /* subtext start */
-.subtext{
+.subtext {
   position: relative;
   z-index: 10;
   color: white;
@@ -155,4 +163,223 @@ nav ul li:hover {
   width: 110px;
   height: 60px;
 }
+
 /* subtext end */
+
+/* home stats start */
+.stats {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+
+.stats span {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.stats p {
+  font-size: 20px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-stats {
+  color: white;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* home stats end */
+
+
+/* Footer start */
+footer {
+  color: white;
+  margin: 100px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.footer-gradient {
+  position: absolute;
+  width: 100%;
+  top: -450px;
+  right: 100px;
+}
+
+.footer-contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-contact h2 {
+  font-size: 40px;
+}
+
+.footer-contact p {
+  font-size: 17px;
+}
+
+footer hr {
+  margin: 40px 0;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer end */
+
+/* home responsive start */
+@media (max-width: 1000px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .hero-heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+  }
+
+  .footer-end {
+    font-size: 12px;
+  }
+
+  .footer-end img {
+    width: 120px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu span {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu {
+    visibility: visible;
+  }
+
+  .menu:hover {
+  scale: .95;
+  }
+
+  .subtext-text h2 {
+    font-size: 15px;
+  }
+
+  .subtext p {
+    font-size: 10px;
+  }
+
+  button {
+    width: 100px;
+    padding: 10px 5px;
+  }
+
+  .stats span  {
+  font-size: 40px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+
+  .about-us__gardient-2 {
+    position: absolute;
+    bottom: -20px;
+    right: -150px;
+    width: 100%;
+}
+
+.home-stats h2{
+ font-size: 20px;
+}
+
+.home-stats p {
+  font-size: 12px;
+}
+}
+
+
+@media(max-width: 500px) {
+html, body {
+  overflow-x: hidden !important;
+}
+
+  .footer-end {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 25px;
+}
+
+.subtext-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column-layout {
+  align-items: center;
+} 
+
+.about-us__hero {
+  /* height: 100dvh; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  margin: 150px 0;
+}
+}
+
+
+/* 
+/* home responsive end */
