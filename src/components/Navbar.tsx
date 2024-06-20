@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <>
+    <div className="parent">
       <nav>
         <ul>
           <li className="top-ul">Om oss</li>
@@ -36,7 +36,7 @@ function Navbar() {
         </ul>
       </div>
       <img src={hero} alt="" className="nav-gradient" />
-    </>
+    </div>
   );
 }
 
