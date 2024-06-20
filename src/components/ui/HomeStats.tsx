@@ -1,5 +1,3 @@
-import React from 'react'
-
 function HomeStats() {
   return (
     <section className='home-stats'>
