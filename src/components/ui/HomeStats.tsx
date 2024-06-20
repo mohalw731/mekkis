@@ -6,7 +6,7 @@ function HomeStats() {
   const ref = useRef(null)
   const {scrollYProgress} = useScroll({
     target: ref,
-    offset: ['0 1', '1.20 2']
+    offset: ['0 2', '1.10 1']
   })
 
   return (
