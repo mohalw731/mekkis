@@ -18,10 +18,6 @@ h2 {
   font-family: "Sen", sans-serif;
 }
 
-.t280 {
-  top: -280px;
-}
-
 button {
   width: 110px;
   border: none;
@@ -136,7 +132,7 @@ nav ul li:hover {
 }
 
 .hero {
-  height: 75dvh;
+  height: 85dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +148,7 @@ nav ul li:hover {
   flex-direction: column;
   gap: 15px;
   position: relative;
-  margin: 100px 0;
+  /* margin: 100px 0; */
 }
 
 .aboutus-gradient {
@@ -168,7 +164,7 @@ nav ul li:hover {
 }
 
 .column-layout {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   display: flex;
   flex-direction: column;
   gap: 30px;

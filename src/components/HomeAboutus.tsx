@@ -12,7 +12,7 @@ export default function HomeAboutus() {
 const ref = useRef(null)
   const {scrollYProgress} = useScroll({
     target: ref,
-    offset: ['0 18', '1.33 1']
+    offset: ['0 13', '1.33 1.55']
   })
 
   return (
