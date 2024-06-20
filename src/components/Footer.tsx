@@ -1,9 +1,22 @@
 import logo from '../assets/logo.svg'
 import footer from '../assets/footer.svg'
+import { useScroll, motion } from 'framer-motion'
+import { useRef } from 'react'
+
 function Footer() {
+
+  const ref = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ['0 15', '1.33 1']
+  })
+
   return (
-    <footer>
-      <div className="footer-contact">
+    <motion.footer style={{
+      scale: scrollYProgress,
+      opacity: scrollYProgress
+    }}>
+      <div className="footer-contact" >
         <h2>Vill du veta mer?</h2>
         <p>Ta reda på hur vi kan hjälpa dig</p>
         <button className="btn">Kontakta oss</button>
@@ -24,7 +37,7 @@ function Footer() {
       </div>
 
       <img src={footer} className='footer-gradient' />
-    </footer>
+    </motion.footer>
   )
 }
 

@@ -1,6 +1,19 @@
+import { useScroll, motion } from 'framer-motion'
+import { useRef } from 'react'
+
 function HomeStats() {
+
+  const ref = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ['0 5', '1.33 1']
+  })
+
   return (
-    <section className='home-stats'>
+    <motion.section className='home-stats' style={{
+      scale: scrollYProgress,
+      opacity: scrollYProgress
+    }}>
       <h2>Vi har gjort detta förut</h2>
       <p>Vår erfarenhet sträcker sig långt. Vi har arbetat med flertals företag i olika branscher och förstår vad för mätvärden som behövs och vad du kan få ut från dina affärsystem.</p>
 
@@ -18,7 +31,7 @@ function HomeStats() {
             <p className="stat-text">Nyckeltal</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

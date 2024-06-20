@@ -5,10 +5,21 @@ import gradient2 from '../assets/aboutUsGradient2.svg'
 import { GoGoal } from 'react-icons/go'
 import { CiCloud } from 'react-icons/ci'
 import { FaSignal } from 'react-icons/fa'
+import { useScroll, motion } from 'framer-motion'
+import { useRef } from 'react'
 
 export default function HomeAboutus() {
+const ref = useRef(null)
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ['0 18', '1.33 1']
+  })
+
   return (
-    <div className="about-us__hero">
+    <motion.div className="about-us__hero" style={{
+      scale: scrollYProgress,
+      opacity: scrollYProgress
+    }}>
       <SubtextUI title='Vi skapar framtidens analyser och beslutstöd' text='Som specialister inom business intelligence skapar vi rapporter med nyckeltal som främjar ditt beslutstagande och optimerar din verksamhet. Mekkis är en komplett samarbetspartner för dig som behöver hjälp med allt från rådgivning till utveckling. ' />
       <button className='btn'>Läs mer</button>
 
@@ -30,6 +41,6 @@ export default function HomeAboutus() {
 
     <img src={gradient2} className='about-us__gardient-2' />
 
-    </div>
+    </motion.div>
   )
 }
